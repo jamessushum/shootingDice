@@ -40,13 +40,19 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            // One higher player
+            Player oneHigher = new OneHigherPlayer();
+            oneHigher.Name = "Slick Rick";
+            oneHigher.Play(large);
+
             List<Player> players = new List<Player>()
             {
                 player1,
                 player2,
                 player3,
                 large,
-                smackTalking
+                smackTalking,
+                oneHigher
             };
 
             PlayMany(players);
