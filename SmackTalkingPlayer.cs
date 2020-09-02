@@ -9,6 +9,7 @@ namespace ShootingDice
     {
         public string Taunt { get; set; }
 
+        // Method to add insult
         public string AddInsult(string insult)
         {
             return this.Taunt = insult;
@@ -16,7 +17,8 @@ namespace ShootingDice
 
         public override int Roll()
         {
-            // Return a random number between 1 and DiceSize and Insult
+            // Displays taunt on every roll
+            // Return a random number between 1 and DiceSize
             Console.WriteLine($"{Name} says: {Taunt}");
             return new Random().Next(DiceSize) + 1;
         }

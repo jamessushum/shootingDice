@@ -32,6 +32,7 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            // Smack talking player
             SmackTalkingPlayer smackTalking = new SmackTalkingPlayer();
             smackTalking.Name = "Rick James";
             smackTalking.AddInsult("My dog rolls better than that!");
