@@ -45,6 +45,13 @@ namespace ShootingDice
             oneHigher.Name = "Slick Rick";
             oneHigher.Play(large);
 
+            Console.WriteLine("-------------------");
+
+            // Human Player
+            Player human = new HumanPlayer();
+            human.Name = "Ricky";
+            player1.Play(human);
+
             List<Player> players = new List<Player>()
             {
                 player1,
@@ -52,7 +59,8 @@ namespace ShootingDice
                 player3,
                 large,
                 smackTalking,
-                oneHigher
+                oneHigher,
+                human
             };
 
             PlayMany(players);
