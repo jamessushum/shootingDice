@@ -74,6 +74,15 @@ namespace ShootingDice
                 Console.WriteLine($"{soreLoser.Name} says: You Cheated!");
             }
 
+            Console.WriteLine("-------------------");
+
+            // Upper Half Player
+            Player upperHalf = new UpperHalfPlayer();
+            upperHalf.Name = "Rick Grimes";
+            upperHalf.Play(player3);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>()
             {
                 player1,
@@ -83,7 +92,8 @@ namespace ShootingDice
                 smackTalking,
                 oneHigher,
                 human,
-                creativeSmack
+                creativeSmack,
+                upperHalf
             };
 
             PlayMany(players);

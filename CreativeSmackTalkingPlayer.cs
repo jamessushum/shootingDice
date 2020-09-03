@@ -17,7 +17,7 @@ namespace ShootingDice
         // Roll selects and displays random taunt from list
         public override int Roll()
         {
-            int randomNum = new Random().Next(0, 3);
+            int randomNum = new Random().Next(0, 3) + 1;
 
             Console.WriteLine($"{Name} says: {listOfInsults[randomNum]}");
 
