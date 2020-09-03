@@ -83,6 +83,21 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            // Sore Loser Upper Half Player
+            Player sluhPlayer = new SoreLoserPlayer();
+            sluhPlayer.Name = "Rick Sanchez";
+            // Try/Catch to handle exception message when SoreLoserUpperHalfPlayer loses
+            try
+            {
+                sluhPlayer.Play(large);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{sluhPlayer.Name} says: This game is rigged!");
+            }
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>()
             {
                 player1,
