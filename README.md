@@ -2,6 +2,8 @@
 
 ## A C# Exercise
 
+C# and .NET exercise utilizing class based inheritance, exceptions, and try/catch to build a CLI dice game. Instructions of the exercise found below.
+
 ### The Story
 
 You are building a dice game. Like any good game, your game should have players. But you don't just want a single kind of player. No. You want your game to be interesting, so you want many types of players.
