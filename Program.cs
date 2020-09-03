@@ -59,6 +59,21 @@ namespace ShootingDice
             creativeSmack.Name = "Rick Roll";
             large.Play(creativeSmack);
 
+            Console.WriteLine("-------------------");
+
+            // Sore Loser Player
+            Player soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Ricky Williams";
+            // Try/Catch to handle exception message when SoreLoserPlayer loses
+            try
+            {
+                soreLoser.Play(player2);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{soreLoser.Name} says: You Cheated!");
+            }
+
             List<Player> players = new List<Player>()
             {
                 player1,
